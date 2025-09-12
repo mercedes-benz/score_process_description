@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -63,6 +63,13 @@
     <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'process_areas/tool_management/tool_management_concept';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://mercedes-benz.github.io/score_process_description/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Guidance" href="guidance/index.html" />
@@ -175,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -260,6 +267,26 @@
         </li>
 </ul></div>
       
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
     </div>
     
   </div>
@@ -336,7 +363,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -402,6 +429,26 @@
         </li>
 </ul></div>
         
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
       </div>
     
   </div>
@@ -424,6 +471,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../safety_analysis/index.html">Safety Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security_management/index.html">Security Management</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Tool Management</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="tool_management_getstrt.html">Getting Started</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Concept Description</a></li>
@@ -500,8 +548,8 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-84523651">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__tool__process">
+<div class="need_container docutils container" id="SNCB-6b79913f">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__tool_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Concept Description</span></span></span></div>
@@ -519,10 +567,9 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tool_management</span></span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tool_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="tool_management_workflow.html#wf__tool__create_tool_verification_report" title="doc_concept__tool__process">wf__tool__create_tool_verification_report</a></span></span></div>
+<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="tool_management_workflow.html#wf__tool_create_tool_verification_report" title="doc_concept__tool_process">wf__tool_create_tool_verification_report</a>, <a class="reference internal" href="tool_management_workflow.html#wf__tool_evaluate_tool" title="doc_concept__tool_process">wf__tool_evaluate_tool</a>, <a class="reference internal" href="tool_management_workflow.html#wf__tool_qualify_tool" title="doc_concept__tool_process">wf__tool_qualify_tool</a>, <a class="reference internal" href="tool_management_workflow.html#wf__tool_approve_tool_verification_report" title="doc_concept__tool_process">wf__tool_approve_tool_verification_report</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -531,7 +578,7 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc_concept__tool__process" title="doc_concept__tool__process">doc_concept__tool__process</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc_concept__tool_process" title="doc_concept__tool_process">doc_concept__tool_process</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -545,14 +592,14 @@
 </div>
 </div>
 <p>In this section a concept for the Tool Management will be discussed. Inputs for this concepts
-are the requirements of ISO2 6262 Part-8, Clause 11, ASPICE PAM 4.0, SUP.8 and
-ISO SAE 21434 Clause 5, 5.4.5 additionally including the requirements of the different stakeholders
-for the Tool Management process.</p>
+are the requirements of ISO 26262 Part-8, Clause 11, ASPICE PAM 4.0, SUP.8 and
+ISO/SAE 21434 Clause 5, 5.4.5 additionally including the requirements of the different stakeholders
+for the Tool Management Process.</p>
 <section id="key-concept">
 <h2>Key concept<a class="headerlink" href="#key-concept" title="Link to this heading">#</a></h2>
-<p>In general all Tools to generate the S-CORE product must be identified. As it is a S-CORE objective
-to use Tools wherever applicable to generate any kind of work products, the selection criteria for
-any Tool including OSS Tools must include therefore the determination of the Tool Confidence Level
+<p>In general all tools to generate the project product must be identified. As it is a project objective
+to use tools wherever applicable to generate any kind of work product, the selection criteria for
+any tool including OSS tools must include therefore the determination of the Tool Confidence Level
 <a class="reference external" href="https://www.validas.de/publications/automotive2012.pdf">(TCL)</a> for the tool under consideration.</p>
 <p>Based on the resulting TCL additional Tool Qualification activities may required.</p>
 </section>
@@ -570,10 +617,10 @@ any Tool including OSS Tools must include therefore the determination of the Too
 <li><p><a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a>
 <a class="reference internal" href="../../roles/index.html#rl__infrastructure_tooling_community" title="rl__infrastructure_tooling_community"><em class="xref need">Infrastructure, Tooling Community (rl__infrastructure_tooling_community)</em></a></p>
 <ul class="simple">
-<li><p>Contributes tooling, infrastructure elements to grow and mature the <strong>S-CORE</strong> development environment</p></li>
+<li><p>Contributes tooling, infrastructure elements to grow and mature the project development environment</p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a>, <a class="reference internal" href="../../roles/index.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager (rl__security_manager)</em></a>,
+<li><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a>, <a class="reference internal" href="../security_management/security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager (rl__security_manager)</em></a>,
 <a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a></p>
 <ul class="simple">
 <li><p>Verifies and approves the the tool verification report</p></li>
@@ -586,20 +633,21 @@ any Tool including OSS Tools must include therefore the determination of the Too
 <ul class="simple">
 <li><p>ISO 26262</p></li>
 <li><p>ASPICE</p></li>
-<li><p>ISO SAE 21434</p></li>
+<li><p>ISO/SAE 21434</p></li>
 </ul>
 </section>
 </section>
 <section id="required-documentation">
 <h2>Required documentation<a class="headerlink" href="#required-documentation" title="Link to this heading">#</a></h2>
-<p>For each tool the <a class="reference internal" href="guidance/tool_management_template.html#gd_temp__tool_management__verif_rpt_template" title="gd_temp__tool_management__verif_rpt_template"><em class="xref need">Tool Verification Report Te... (gd_temp__tool_management__verif_rpt_template)</em></a> shall be used to document
+<p>For each tool the <a class="reference internal" href="guidance/tool_management_template.html#gd_temp__tool_management_verif_rpt_template" title="gd_temp__tool_management_verif_rpt_template"><em class="xref need">Tool Verification Report Te... (gd_temp__tool_management_verif_rpt_template)</em></a> shall be used to document
 the relevant information.</p>
 </section>
 <section id="activities-for-tool-management">
 <h2>Activities for Tool Management<a class="headerlink" href="#activities-for-tool-management" title="Link to this heading">#</a></h2>
 <p>The main work product is the <a class="reference internal" href="tool_management_workproducts.html#wp__tool_verification_report" title="wp__tool_verification_report"><em class="xref need">Tool Verification Report (wp__tool_verification_report)</em></a>.
-Thus the workflow <a class="reference internal" href="tool_management_workflow.html#wf__tool__create_tool_verification_report" title="wf__tool__create_tool_verification_report"><em class="xref need">Create Tool Verification Report (wf__tool__create_tool_verification_report)</em></a>
-applies.</p>
+This work product is created and maintained until it is released. It contains the tool
+evaluation results as well as the qualification results, if applicable.
+For each tool the <a class="reference internal" href="tool_management_workflow.html#tlm-workflows"><span class="std std-ref">Workflows</span></a> applies.</p>
 </section>
 <section id="attributes-for-tool-management">
 <h2>Attributes for Tool Management<a class="headerlink" href="#attributes-for-tool-management" title="Link to this heading">#</a></h2>
@@ -671,7 +719,7 @@ applies.</p>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/dummy/dummy/edit/main/docs/process_areas/tool_management/tool_management_concept.rst">
+    <a href="https://github.com/mercedes-benz/score_process_description/edit/main/docs/process_areas/tool_management/tool_management_concept.rst">
       <i class="fa-solid fa-pencil"></i>
       
       

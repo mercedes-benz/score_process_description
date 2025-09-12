@@ -16,7 +16,7 @@ Concept Description
 ###################
 
 .. doc_concept:: Requirements Concept
-   :id: doc_concept__req__process
+   :id: doc_concept__req_process
    :status: valid
    :tags: requirements_engineering
 
@@ -101,16 +101,19 @@ Based on the inputs of the previous chapter the types of requirements which need
 Stakeholder Requirements
 ========================
 
-On the platform level the *Stakeholder (=customer) Requirements* are defined. These requirements describe which content the platform needs to contain, and serve as a project description of the top-level functionality. An example could be e.g.
+On the platform level the *Stakeholder (=customer) Requirements* are defined. These requirements describe which content (functionality and safety mechanisms) the platform needs to contain, and serve as a project description of the top-level functionality. An example could be e.g.
 
 .. code-block:: text
 
    The platform shall support configuration of applications via files (e.g. yaml, json)
 
+Note that the *Stakeholder Requirements* represent the assumed technical safety requirements for the platform SEooC,
+i.e. the assumption on what content is needed, which shall be matched by the user to their expectations.
+
 Feature Requirements
 ====================
 
-The *Feature Requirements* addresses mainly the integration level of SW modules and components. These shall describe the behavior of the feature on platform level shall be described including the correlations of the integrated components. They serves mainly as an input for (SW + Safety) Architects, Testers, Integrators and are derived from the *Stakeholder Requirements*. To provide an example
+The *Feature Requirements* derived from stakeholder requirements address mainly the integration level of SW modules and components. These shall describe the behavior of the feature on platform level shall be described including the correlations of the integrated components. They serves mainly as an input for (SW + Safety) Architects, Testers, Integrators and are derived from the *Stakeholder Requirements*. To provide an example
 
 .. code-block:: text
 
@@ -180,6 +183,8 @@ Following attributes need to be filled manually for each requirement:
    * - Requirements Type
      - The requirement type defines which category the requirement relates to. Following categories are defined: [Functional, Interface, Process, Legal, Non-Functional]
 
+Following attributes are automatically generated:
+
 .. list-table:: Automated Attributes
    :header-rows: 1
    :widths: 15,70,15
@@ -194,7 +199,7 @@ Following attributes need to be filled manually for each requirement:
      - This attribute contains a hash value which is calculated over all mandatory requirement attributes. However this script needs to be executed manually, as this information is required to be present in the rst file.
      - Script / Bazel Target
    * - Satisfies Hash
-     - It contains the hash of the parent requirement. If the parent requirement is changed the hash will also change and the linkage has to be revisited again. A more detailed description is provided here: :need:`gd_req__req__attr_version`
+     - It contains the hash of the parent requirement. If the parent requirement is changed the hash will also change and the linkage has to be revisited again. A more detailed description is provided here: :need:`gd_req__req_attr_version`
      - Script / Bazel Target
    * - Implemented by
      - During Build the code files are parsed for a defined tag which includes the requirement id. If this is located a link to the code will be added in the requirement
@@ -288,4 +293,4 @@ Traceability Concept for Requirements
 
 The standards require that a requirement can be traced throughout the complete hierarchy levels including its :ref:`implementation <implementation>` and :ref:`verification <process_verification>`. In this project it is implemented the following way:
 
-In general the traceability is visualized in main development work product traceability model (:numref:`wp_traceability_model`).
+In general the traceability is visualized in main development work product traceability model (:ref:`general_concepts_traceability`).

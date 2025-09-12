@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
-    <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -63,6 +63,13 @@
     <script src="../../../../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../../../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'folder_templates/modules/module_name/component_name/docs/architecture/index';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://mercedes-benz.github.io/score_process_description/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <link rel="index" title="Index" href="../../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../../search.html" />
     <link rel="next" title="Detailed Design" href="../detailed_design/index.html" />
@@ -175,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -260,6 +267,26 @@
         </li>
 </ul></div>
       
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
     </div>
     
   </div>
@@ -336,7 +363,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../../workproducts/index.html">
-    Workproducts
+    Work products
   </a>
 </li>
 
@@ -402,6 +429,26 @@
         </li>
 </ul></div>
         
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
       </div>
     
   </div>
@@ -419,13 +466,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../requirements/index.html">Requirements</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Component Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../detailed_design/index.html">Detailed Design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../safety_analysis/fmea.html">Safety Analysis : FMEA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../safety_analysis/dfa.html">Dependent Failure Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../safety_analysis/fmea.html">FMEA (Failure Modes and Effects Analysis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../safety_analysis/dfa.html">DFA (Dependent Failure Analysis)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../component_classification.html">Component Classification</a></li>
 </ul>
 </details></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/index.html">Tools</a></li>
 </ul>
 </div>
 </nav></div>
@@ -494,7 +542,7 @@
                   
   <section id="component-architecture">
 <span id="component-architecture-template"></span><h1>Component Architecture<a class="headerlink" href="#component-architecture" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-93de7449">
+<div class="need_container docutils container" id="SNCB-e5ccb0ff">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__component_name_architecture">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -513,12 +561,10 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">template</span><span class="needs_spacer">, </span><span class="needs_data">component_name</span></span></span></div>
-<div class="line"><span class="needs_realizes"><span class="needs_label">realizes: </span><span class="needs_data">wp__component_arch</span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">template</span><span class="needs_spacer">, </span><span class="needs_data">component_name</span></span></span></div>
 </span></span></div>
-<div class="line"><span></span></div>
+<div class="line"><span><div class="line">realizes: <span class="realizes"><span><a class="reference internal" href="../../../../../../process_areas/architecture_design/architecture_workproducts.html#wp__component_arch" title="doc__component_name_architecture">wp__component_arch</a></span></span></div>
+</span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
@@ -566,7 +612,7 @@
 <section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
 <p>General Description</p>
-<p>Design Decisions</p>
+<p>Design Decisions - For the documentation of the decision the <a class="reference internal" href="../../../../../../process_areas/change_management/guidance/change_management_decision_record_template.html#gd_temp__change_decision_record" title="gd_temp__change_decision_record"><em class="xref need">Decision Record Template (gd_temp__change_decision_record)</em></a> can be used.</p>
 <p>Design Constraints</p>
 <section id="rationale-behind-architecture-decomposition">
 <h3>Rationale Behind Architecture Decomposition<a class="headerlink" href="#rationale-behind-architecture-decomposition" title="Link to this heading">#</a></h3>
@@ -581,7 +627,7 @@
 <h2>Static Architecture<a class="headerlink" href="#static-architecture" title="Link to this heading">#</a></h2>
 <p>The components are designed to cover the expectations from the feature architecture
 (i.e. if already exists a definition it should be taken over and enriched).</p>
-<div class="need_container docutils container" id="SNCB-cb74a9f3">
+<div class="need_container docutils container" id="SNCB-6daff239">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__component_name__static_view">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -600,10 +646,7 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">invalid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp_arc_sta__component_name__static_view">comp_req__component_name__some_title</a></span></span></div>
 <div class="line">implements: <span class="implements"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#logic_arc_int__feature_name__interface_name" title="comp_arc_sta__component_name__static_view">logic_arc_int__feature_name__interface_name</a></span></span></div>
@@ -622,7 +665,7 @@
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Static View</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component &amp; Component Package Diagram</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -634,7 +677,7 @@
 </section>
 <section id="dynamic-architecture">
 <h2>Dynamic Architecture<a class="headerlink" href="#dynamic-architecture" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-7b56d3a9">
+<div class="need_container docutils container" id="SNCB-58097033">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_dyn table" id="comp_arc_dyn__component_name__dynamic_view">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -653,10 +696,7 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">invalid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#comp_req__component_name__some_title" title="comp_arc_dyn__component_name__dynamic_view">comp_req__component_name__some_title</a></span></span></div>
 </span></div>
@@ -671,7 +711,7 @@
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Dynamic View</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Sequence Diagram</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -694,7 +734,7 @@
 </section>
 <section id="lower-level-components">
 <h2>Lower Level Components<a class="headerlink" href="#lower-level-components" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-674612eb">
+<div class="need_container docutils container" id="SNCB-c3655ceb">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__component_name__2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -713,10 +753,7 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">invalid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component_name</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">implements: <span class="implements"><span><a class="reference internal" href="../../../../../features/feature_name/architecture/index.html#logic_arc_int__feature_name__interface_name" title="comp_arc_sta__component_name__2">logic_arc_int__feature_name__interface_name</a></span></span></div>
 <div class="line">included by: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__component_name__static_view" title="comp_arc_sta__component_name__2">comp_arc_sta__component_name__static_view</a></span></span></div>
@@ -732,7 +769,7 @@
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Static View</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component &amp; Component Package Diagram</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -749,7 +786,7 @@
 <p class="admonition-title">Attention</p>
 <p>The above directives must be updated according to your component architecture.</p>
 <ul class="simple">
-<li><p>Replace the example content by the real content (according to <a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_guideline.html#gd_guidl__arch__design" title="gd_guidl__arch__design"><em class="xref need">Architectural Design (gd_guidl__arch__design)</em></a>)</p></li>
+<li><p>Replace the example content by the real content (according to <a class="reference internal" href="../../../../../../process_areas/architecture_design/guidance/architecture_guideline.html#gd_guidl__arch_design" title="gd_guidl__arch_design"><em class="xref need">Architectural Design (gd_guidl__arch_design)</em></a>)</p></li>
 <li><p>Set the status to valid and start the review/merge process</p></li>
 </ul>
 </div>
@@ -820,7 +857,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/dummy/dummy/edit/main/docs/folder_templates/modules/module_name/component_name/docs/architecture/index.rst">
+    <a href="https://github.com/mercedes-benz/score_process_description/edit/main/docs/folder_templates/modules/module_name/component_name/docs/architecture/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
