@@ -549,7 +549,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-c18a411c">
+<div class="need_container docutils container" id="SNCB-833af6e5">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__req_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -707,7 +707,7 @@ i.e. the assumption on what content is needed, which shall be matched by the use
 </section>
 <section id="assumption-of-use-requirements">
 <h3>Assumption of Use Requirements<a class="headerlink" href="#assumption-of-use-requirements" title="Link to this heading">#</a></h3>
-<p>Last but not least a requirement type is needed which describes e.g. the boundary conditions which need to be fulfilled when using a software module. Those requirements are called <em>Assumption of Use</em> (AoUs)</p>
+<p>Last but not least a requirement type is needed which describes e.g. the boundary conditions which need to be fulfilled when using a software element. Those requirements are called <em>Assumption of Use</em> (AoUs) and can be defined on every level (stakeholder/SW-platform, feature, component).</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>The user shall provide a string as input which is not corrupted due to HW or QM SW errors.
 </pre></div>
 </div>
@@ -725,7 +725,7 @@ i.e. the assumption on what content is needed, which shall be matched by the use
 <p>The required attributes for the requirements are defined in this subchapter. On the top level we can distinguish between attributes which need to be filled manually and attributes which are generated during the <em>docs build</em>.</p>
 <p>Following attributes need to be filled manually for each requirement:</p>
 <div class="pst-scrollable-table-container"><table class="table" id="id5">
-<caption><span class="caption-number">Table 24 </span><span class="caption-text">Manual Attributes</span><a class="headerlink" href="#id5" title="Link to this table">#</a></caption>
+<caption><span class="caption-number">Table 35 </span><span class="caption-text">Manual Attributes</span><a class="headerlink" href="#id5" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 15.0%" />
 <col style="width: 85.0%" />
@@ -761,6 +761,12 @@ For any other requirement the reasoning can be deduced from the top level requir
 </tr>
 <tr class="row-odd"><td><p>Requirements Type</p></td>
 <td><p>The requirement type defines which category the requirement relates to. Following categories are defined: [Functional, Interface, Process, Non-Functional]</p>
+<ul class="simple">
+<li><p>Functional: If implemented can be verified by a test (unit, integration)</p></li>
+<li><p>Interface: Does not define a functionality but the API provided to use the functionality</p></li>
+<li><p>Process: If implemented can be verified by reviewing the process description (sub-type of non-functional)</p></li>
+<li><p>Non-Functional: If implemented can be checked by review/analysis (of e.g. code, documentation)</p></li>
+</ul>
 <p>Note that the linking to the requirements is affected by these types, see <a class="reference internal" href="guidance/requirements_process_reqs.html#gd_req__req_linkage_architecture" title="gd_req__req_linkage_architecture"><em class="xref need">Requirements linkage archit... (gd_req__req_linkage_architecture)</em></a></p>
 </td>
 </tr>
@@ -769,7 +775,7 @@ For any other requirement the reasoning can be deduced from the top level requir
 </div>
 <p>Following attributes are automatically generated:</p>
 <div class="pst-scrollable-table-container"><table class="table" id="id6">
-<caption><span class="caption-number">Table 25 </span><span class="caption-text">Automated Attributes</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
+<caption><span class="caption-number">Table 36 </span><span class="caption-text">Automated Attributes</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 15.0%" />
 <col style="width: 70.0%" />

@@ -133,7 +133,7 @@ The lowest abstraction level is represented by the *component requirements*. The
 Assumption of Use Requirements
 ==============================
 
-Last but not least a requirement type is needed which describes e.g. the boundary conditions which need to be fulfilled when using a software module. Those requirements are called *Assumption of Use* (AoUs)
+Last but not least a requirement type is needed which describes e.g. the boundary conditions which need to be fulfilled when using a software element. Those requirements are called *Assumption of Use* (AoUs) and can be defined on every level (stakeholder/SW-platform, feature, component).
 
 .. code-block:: text
 
@@ -182,6 +182,11 @@ Following attributes need to be filled manually for each requirement:
      - This attribute describes if the requirement has any impact on security of the platform.
    * - Requirements Type
      - The requirement type defines which category the requirement relates to. Following categories are defined: [Functional, Interface, Process, Non-Functional]
+
+       - Functional: If implemented can be verified by a test (unit, integration)
+       - Interface: Does not define a functionality but the API provided to use the functionality
+       - Process: If implemented can be verified by reviewing the process description (sub-type of non-functional)
+       - Non-Functional: If implemented can be checked by review/analysis (of e.g. code, documentation)
 
        Note that the linking to the requirements is affected by these types, see :need:`gd_req__req_linkage_architecture`
 
