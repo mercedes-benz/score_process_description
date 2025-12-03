@@ -168,7 +168,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
-    Process Areas
+    Process areas
   </a>
 </li>
 
@@ -203,14 +203,14 @@
 
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../standards/index.html">
-    Standards
+    Standards & Requirements
   </a>
 </li>
 
 
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../trustable/index.html">
-    Trustable
+    Trustable Software Framework
   </a>
 </li>
 
@@ -349,7 +349,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
-    Process Areas
+    Process areas
   </a>
 </li>
 
@@ -377,14 +377,14 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../standards/index.html">
-    Standards
+    Standards & Requirements
   </a>
 </li>
 
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../trustable/index.html">
-    Trustable
+    Trustable Software Framework
   </a>
 </li>
 
@@ -472,6 +472,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../safety_analysis/index.html">Safety Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security_analysis/index.html">Security Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../security_management/index.html">Security Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tool_management/index.html">Tool Management</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Verification</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -479,11 +480,10 @@
 <li class="toctree-l2"><a class="reference internal" href="verification_concept.html">Concept Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="guidance/index.html">Guidance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="verification_roles.html">Roles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="verification_workflows.html">Workflow Verification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="verification_workproducts.html">Work Products Verification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="verification_workflows.html">Verification Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="verification_workproducts.html">Verification Work Products</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../process_reqs_list/index.html">Process Requirements List</a></li>
 </ul>
 </div>
 </nav></div>
@@ -525,7 +525,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Process Areas</a></li>
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Process areas</a></li>
     
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Verification</a></li>
@@ -549,7 +549,7 @@
                   
   <section id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-c50bd934">
+<div class="need_container docutils container" id="SNCB-9734ec41">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_getstrt table" id="doc_getstrt__verification_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -615,20 +615,7 @@ It leverages the <a class="reference internal" href="verification_concept.html#d
 <li><p>Test reports are created when all verification artifacts on a module and platform level are
 available for a specific baseline.</p></li>
 </ul>
-<p>The details of what needs to be done in each part are described in the <a class="reference internal" href="verification_workflows.html#verification-workflows"><span class="std std-ref">Workflow Verification</span></a>.</p>
-</section>
-<section id="tooling-support">
-<h2>Tooling Support<a class="headerlink" href="#tooling-support" title="Link to this heading">#</a></h2>
-<p>The following tools may support the verification process (according to the project specific <a class="reference internal" href="../implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">SW development Plan (wp__sw_development_plan)</em></a>):</p>
-<ul class="simple">
-<li><p><strong>Bazel:</strong> For building the software and running tests (supported by ITF).</p></li>
-<li><p><strong>Google Test:</strong> For unit testing in C++.</p></li>
-<li><p><strong>Rust’s built-in testing framework:</strong> For unit testing in Rust.</p></li>
-<li><p><strong>Pytest:</strong> For component to integration testing in Python.</p></li>
-<li><p><strong>ITF (Integration Test Framework):</strong> As framework for integration testing based on pytest.</p></li>
-<li><p><strong>Sphinx-needs:</strong> Tracing artifacts like requirements to test cases.</p></li>
-</ul>
-<p>Additionally, tools will be provided to automatically generate coverage tests based on the unit source code.</p>
+<p>The details of what needs to be done in each part are described in the <a class="reference internal" href="verification_workflows.html#verification-workflows"><span class="std std-ref">Verification Workflows</span></a>.</p>
 </section>
 </section>
 
@@ -681,7 +668,6 @@ available for a specific baseline.</p></li>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relevant-documents">Relevant Documents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-workflow">General Workflow</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tooling-support">Tooling Support</a></li>
 </ul>
   </nav></div>
 
