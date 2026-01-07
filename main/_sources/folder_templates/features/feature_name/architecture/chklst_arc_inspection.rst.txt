@@ -59,7 +59,7 @@ Checklist
       - Is the traceability from software architectural elements to requirements, and other level architectural
         elements (e.g. component to interface) established according to the "Relations between the architectural elements" as described in :need:`doc_concept__arch_process`?
       - automated
-      - Trace should be checked by Sphinx. Will be removed from checklist once requirement is implemented.
+      - Trace should be checked automatically by tool support in the future. It will be removed from the checklist once the requirement (:need:`Correlations of the architectural building blocks <gd_req__arch_build_blocks_corr>`) is implemented. Refer to `Tool Requirements <https://eclipse-score.github.io/docs-as-code/main/internals/requirements/requirements.html>`_ for the current status.
       -
       -
       -
@@ -74,8 +74,8 @@ Checklist
     * - ARC_01_03
       - Is the architectural element traceable to the lower level artifacts as defined by the workproduct traceability?
       - automated
-      - Will be removed from checklist once requirement is implemented by automated tool check.
-        Details of possible linking can be depicted from `traceability concept <https://eclipse-score.github.io/process_description/main/general_concepts/score_traceability_concept.html>`_
+      - Will be removed from checklist once the requirement (:need:`Correlations of the architectural building blocks <gd_req__arch_build_blocks_corr>`) is implemented by automated tool check. See `Tool Requirements <https://eclipse-score.github.io/docs-as-code/main/internals/requirements/requirements.html>`_.
+        Details of possible linking can be depicted from :ref:`traceability concept <general_concepts_traceability>`.
       -
       -
       -
@@ -151,7 +151,7 @@ Checklist
         allocated to single design element, number of interfaces and operations in an interface,
         function parameters, global variables, complex types, limited comprehensibility.
 
-        Note: If the "number" above exceeds "3" a design rationale is mandatory (for all types)
+        Note: If the "number" above exceeds "3" a design rationale is mandatory (for all types).
       -
       -
       -
@@ -159,6 +159,35 @@ Checklist
       - Is the software architecture design following best practices and design principles?
       - manual
       - Refer to architectural guidelines and recommendations within the project documentation.
+      -
+      -
+      -
+    * - ARC_04_01
+      - If software partitioning (different operating system processes) is used to implement freedom from interference between the processes with different rating (QM/ASIL), is effectiveness evidence generated during integration and verification tests?
+
+        Note: see :need:`std_req__iso26262__software_749` and Annex D for partitioning
+      - manual
+      -
+        a) the usage of shared resources (cpu time, shared memory, ...) are checked in a way that freedom from interference between the processes is ensured,
+        b) check if the operating system supports freedom from interference between the processes
+      -
+      -
+      -
+    * - ARC_04_02
+      - Is an upper estimation of the required resources (RAM, ROM, non volatile memory, communication) available and documented?
+
+        Note: see :need:`std_req__iso26262__software_7411`
+      - manual
+      -
+      -
+      -
+      -
+    * - ARC_04_03
+      - Are the the scheduling properties for the component defined and documented?
+
+        Note: see :need:`std_req__iso26262__software_743`
+      - manual
+      -
       -
       -
       -
