@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -53,7 +53,7 @@
 
     <script src="../../_static/jquery.js?v=5d32c60e"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/documentation_options.js?v=7f41d439"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
@@ -218,6 +218,13 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../folder_templates/index.html">
     Folder Templates
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../glossary/index.html">
+    Glossary
   </a>
 </li>
 
@@ -395,6 +402,13 @@
   </a>
 </li>
 
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../glossary/index.html">
+    Glossary
+  </a>
+</li>
+
   </ul>
 </nav></div>
           
@@ -549,7 +563,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-aa576a33">
+<div class="need_container docutils container" id="SNCB-a550c12f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__rel_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -639,15 +653,16 @@ its output.</p>
 <h3>Platform Release<a class="headerlink" href="#platform-release" title="Link to this heading">#</a></h3>
 <p>The Platform Release contains the full &lt;Project&gt; scope which spans over many modules. The releases
 are proposed and approved by <em>Project Leads</em>. Every software module
-has its own repository which contains multiple components, their requirements, architecture,
-implementation and tests.</p>
+is located in one repository (= delivery container) which contains multiple components, their requirements, architecture,
+implementation and tests. There may be more than one software module (=dependable element) in one repository,
+but this is not the recommended configuration.</p>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead Circle (rl__project_lead)</em></a></p>
 <ul class="simple">
 <li><p>Define and proposes scope of release</p></li>
 <li><p>Writes platform release notes</p></li>
 <li><p>Approves the platform release notes</p></li>
-<li><p>Adds and removes software modules to the platform</p></li>
+<li><p>Adds and removes delivery containers to the platform</p></li>
 <li><p>Releases the platform</p></li>
 </ul>
 </li>
@@ -684,7 +699,7 @@ Only released software modules can be included into a platform release.</p>
 <li><p><a class="reference internal" href="../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead Circle (rl__project_lead)</em></a></p>
 <ul class="simple">
 <li><p>Approves the module release notes</p></li>
-<li><p>Adds and removes Software modules to the Platform</p></li>
+<li><p>Adds and removes delivery containers to the Platform</p></li>
 <li><p>Releases the module</p></li>
 </ul>
 </li>
@@ -692,13 +707,17 @@ Only released software modules can be included into a platform release.</p>
 </section>
 <section id="branching-strategy">
 <h3>Branching Strategy<a class="headerlink" href="#branching-strategy" title="Link to this heading">#</a></h3>
-<p>Branches:
-* master: for implementation and documentation in development phase.
-* release/*: Branches for distinct releases, named release/&lt;version-number&gt;, no functional changes, only bugfixes, quality and documentation improvements.</p>
+<p>Branches:</p>
+<ul class="simple">
+<li><p>master: for implementation and documentation in development phase.</p></li>
+<li><p>release/*: Branches for distinct releases, named release/&lt;version-number&gt;, no functional changes, only bugfixes, quality and documentation improvements.</p></li>
+</ul>
 <p>Workflow:</p>
-<p>When ready for a new release, create a branch release/&lt;version-number&gt; from master.
-Perform final testing and adjustments on the release branch.
-Tag the release in the release branch.</p>
+<ol class="arabic simple">
+<li><p>When ready for a new release, create a branch release/&lt;version-number&gt; from master (if needed).</p></li>
+<li><p>Perform final testing and adjustments on the release branch (test results should be available continuously, but maybe not all).</p></li>
+<li><p>Tag the release in the release branch.</p></li>
+</ol>
 </section>
 </section>
 </section>
@@ -766,7 +785,7 @@ Tag the release in the release branch.</p>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/mercedes-benz/score_process_description/edit/main/'process'/process_areas/release_management/release_concept.rst">
+    <a href="https://github.com/mercedes-benz/score_process_description/edit/main/process/process_areas/release_management/release_concept.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -777,15 +796,6 @@ Tag the release in the release branch.</p>
     </a>
   </div>
 </div>
-
-  <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../_sources/process_areas/release_management/release_concept.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
 
 </div></div>
               
